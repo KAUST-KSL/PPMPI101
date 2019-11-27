@@ -1,0 +1,27 @@
+# Introduction to Parallel Programming using MPI
+
+These are exercises to run along with the tutorial. 
+Solutions are provided for each exercise.
+
+## Building
+    --------
+
+To build, simply run
+make 
+
+
+## Run
+   ---
+- Copy jobscript_template.slurm from top level directory to your activity direcotry
+- Modify the srun line to add your application name you built using make.
+- To submit to slurm scheduler, use 
+	sbatch jobscript_name
+- An output file namely slurm-XXXXXX.out will be created in your present working directory. You can examine it with 
+	cat slurm-XXXXX.out
+
+- Conditions to adhere while running activity 6:
+	N should be exactly divisible by sqrt(nprocs) where N is Number of grid points in 1 dimension
+	nprocs should be a perfect square i.e. is a whole number e.g. 1,4,9,16 etc..
+
+
+
