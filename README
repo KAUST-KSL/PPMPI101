@@ -6,7 +6,7 @@ Solutions are provided for each exercise.
 ## Building
     --------
 
-To build, simply run
+To build, simply go into the exercise or solution director, choose language and activity and run
 make 
 
 
