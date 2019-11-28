@@ -1,5 +1,9 @@
 FC=ftn
-FFLAGS=-g -eZ
+ifeq ($(PE_ENV),CRAY)
+   FFLAGS=-g -eZ
+else ifeq ($(PE_ENV),GNU)
+   FFLAGS=-g -cpp
+endif
 
 all: heat_serial heat_mpi_2d
 
